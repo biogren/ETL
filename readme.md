@@ -26,8 +26,8 @@ Table1: Parameters and their characteristica describing air quality in Tartu
 If you want to use the CVS data format for calculations:
 
 * Use python script to extact data from http://airviro.klab.ee/ (`fetch_air.ipynb`) and gather data into cvs file
-* Use python script to calculate monthly and daily average values and generate new csv files (`Daily_monthly_calc.ipynb`)
-* OpenRefine can be used to transform the daily and montly data to sql
+* Use python script to calculate monthly, hourly and daily average values and generate new csv files (`Daily_monthly_calc.ipynb`)
+* OpenRefine can be used to transform the daily, hourly and montly data to sql
 
 If you want to use sql for calculations:
 
@@ -35,4 +35,4 @@ If you want to use sql for calculations:
 * Use Openrefine to transform columns into correct format (use `data_tranform.json`)  
 * Use OpenRefine to export data into SQL file (prepare a file `air-2022-csv.sql`)
 * Open file `air-2022-csv.sql` in DB client 
-* Use SQL script to calculate monthly and daily average values and generate new DB tables (`sql_average.sql`)
+* Use SQL script to calculate monthly, hourly and daily average values and generate new DB tables (`sql_average.sql`)
